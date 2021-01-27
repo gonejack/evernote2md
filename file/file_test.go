@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/wormi4ok/evernote2md/file"
+	"github.com/gonejack/evernote2md/file"
 )
 
 const dirName = "testdata"

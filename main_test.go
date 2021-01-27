@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/wormi4ok/evernote2md/internal"
+	"github.com/gonejack/evernote2md/internal"
 )
 
 const sampleFile = `

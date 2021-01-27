@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/wormi4ok/evernote2md/encoding/enex"
+	"github.com/gonejack/evernote2md/encoding/enex"
 )
 
 var expect = &enex.Export{

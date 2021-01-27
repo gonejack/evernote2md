@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/wormi4ok/evernote2md/encoding/enex"
-	"github.com/wormi4ok/evernote2md/encoding/markdown"
-	"github.com/wormi4ok/evernote2md/internal"
+	"github.com/gonejack/evernote2md/encoding/enex"
+	"github.com/gonejack/evernote2md/encoding/markdown"
+	"github.com/gonejack/evernote2md/internal"
 )
 
 var update = flag.Bool("update-golden-file", false, "Update golden file")

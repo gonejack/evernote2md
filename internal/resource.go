@@ -9,8 +9,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/wormi4ok/evernote2md/encoding/enex"
-	"github.com/wormi4ok/evernote2md/file"
+	"github.com/gonejack/evernote2md/encoding/enex"
+	"github.com/gonejack/evernote2md/file"
 )
 
 var reImg = regexp.MustCompile(`^image/[\w]+`)

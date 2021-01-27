@@ -1,8 +1,9 @@
-module github.com/wormi4ok/evernote2md
+module github.com/gonejack/evernote2md
 
 go 1.15
 
 require (
+	github.com/PuerkitoBio/goquery v1.6.1
 	github.com/cheggaaa/pb/v3 v3.0.4
 	github.com/fatih/color v1.9.0 // indirect
 	github.com/hashicorp/logutils v1.0.0

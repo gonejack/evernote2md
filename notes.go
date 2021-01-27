@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/wormi4ok/evernote2md/encoding/markdown"
-	"github.com/wormi4ok/evernote2md/file"
+	"github.com/gonejack/evernote2md/encoding/markdown"
+	"github.com/gonejack/evernote2md/file"
 )
 
 // noteFilesDir saves markdown notes in a directory on the filesystem

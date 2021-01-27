@@ -3,7 +3,7 @@ package internal
 import (
 	"testing"
 
-	"github.com/wormi4ok/evernote2md/encoding/enex"
+	"github.com/gonejack/evernote2md/encoding/enex"
 )
 
 func Test_guessExt(t *testing.T) {

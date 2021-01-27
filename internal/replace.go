@@ -3,13 +3,14 @@ package internal
 import (
 	"bytes"
 	"fmt"
+	"github.com/PuerkitoBio/goquery"
 	"strconv"
 	"strings"
 
 	"golang.org/x/net/html"
 
-	"github.com/wormi4ok/evernote2md/encoding/enex"
-	"github.com/wormi4ok/evernote2md/encoding/markdown"
+	"github.com/gonejack/evernote2md/encoding/enex"
+	"github.com/gonejack/evernote2md/encoding/markdown"
 )
 
 // TagReplacer allows manipulating HTML nodes in order
@@ -37,11 +38,17 @@ func (c *Converter) normalizeHTML(note *enex.Note, _ *markdown.Note, rr ...TagRe
 	}
 	f(doc)
 
-	var out bytes.Buffer
-	if c.err = html.Render(&out, doc); c.err != nil {
+	qdoc := goquery.NewDocumentFromNode(doc)
+	qdoc.Find("a").FilterFunction(func(i int, selection *goquery.Selection) bool {
+		return strings.TrimSpace(selection.Text()) == ""
+	}).Remove()
+
+	out, err := qdoc.Html()
+	if err != nil {
 		return
 	}
-	note.Content = out.Bytes()
+
+	note.Content = []byte(out)
 }
 
 // Media tag replacer puts a standard HTML <img> tag

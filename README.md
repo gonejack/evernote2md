@@ -1,11 +1,11 @@
 # Evernote to Markdown converter
 
-[![Build Status](https://github.com/wormi4ok/evernote2md/workflows/Test/badge.svg)](https://github.com/wormi4ok/evernote2md/actions)
+[![Build Status](https://github.com/gonejack/evernote2md/workflows/Test/badge.svg)](https://github.com/gonejack/evernote2md/actions)
 [![Docker Build Status](https://img.shields.io/docker/build/wormi4ok/evernote2md?label=Docker)](https://hub.docker.com/r/wormi4ok/evernote2md/)
 [![Homebrew](https://repology.org/badge/version-for-repo/homebrew/evernote2md.svg?header=Homebrew)](https://repology.org/project/evernote2md/versions)
 [![codecov](https://codecov.io/gh/wormi4ok/evernote2md/branch/master/graph/badge.svg)](https://codecov.io/gh/wormi4ok/evernote2md)
-[![Go Report Card](https://goreportcard.com/badge/github.com/wormi4ok/evernote2md)](https://goreportcard.com/report/github.com/wormi4ok/evernote2md)
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/wormi4ok/evernote2md)](https://pkg.go.dev/github.com/wormi4ok/evernote2md)
+[![Go Report Card](https://goreportcard.com/badge/github.com/gonejack/evernote2md)](https://goreportcard.com/report/github.com/gonejack/evernote2md)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/gonejack/evernote2md)](https://pkg.go.dev/github.com/gonejack/evernote2md)
 
 Evernote2md is a CLI tool to convert Evernote notes exported in *.enex format to a directory with markdown files.
 
@@ -30,10 +30,10 @@ brew install evernote2md
 
 Manually:
 
-[Download the latest release](https://github.com/wormi4ok/evernote2md/releases/latest) for your OS.
+[Download the latest release](https://github.com/gonejack/evernote2md/releases/latest) for your OS.
 
 > ##### Note for macOS users!
-> Please, check this [wiki](https://github.com/wormi4ok/evernote2md/wiki/macOS-FAQ) page if you have problems running the tool.
+> Please, check this [wiki](https://github.com/gonejack/evernote2md/wiki/macOS-FAQ) page if you have problems running the tool.
 
 ### How to use
 
@@ -46,7 +46,7 @@ evernote2md (flags) [input] [outputDir]
 If `outputDir` is not specified, `./notes` is used. Add optional `--folders` flag to put every note in a separate folder.
 
 An option `--tagTemplate` allows to change the way tags are formatted. 
-See [wiki article](https://github.com/wormi4ok/evernote2md/wiki/Custom-tag-template) for more information.
+See [wiki article](https://github.com/gonejack/evernote2md/wiki/Custom-tag-template) for more information.
 
 Flag `--help` shows all available options.
 

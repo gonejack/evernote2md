@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wormi4ok/evernote2md/encoding/enex"
-	"github.com/wormi4ok/evernote2md/encoding/markdown"
+	"github.com/gonejack/evernote2md/encoding/enex"
+	"github.com/gonejack/evernote2md/encoding/markdown"
 )
 
 // Converter holds configuration options to control conversion

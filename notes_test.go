@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/wormi4ok/evernote2md/encoding/markdown"
+	"github.com/gonejack/evernote2md/encoding/markdown"
 )
 
 func TestNoteFilesDir_SaveNote(t *testing.T) {

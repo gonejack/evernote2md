@@ -5,8 +5,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/wormi4ok/evernote2md/encoding/enex"
-	"github.com/wormi4ok/evernote2md/encoding/markdown"
+	"github.com/gonejack/evernote2md/encoding/enex"
+	"github.com/gonejack/evernote2md/encoding/markdown"
 )
 
 const DefaultTagTemplate = "`{{tag}}`"

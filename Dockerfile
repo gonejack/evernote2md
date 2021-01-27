@@ -2,7 +2,7 @@ FROM golang:1.15-alpine AS build
 
 ENV CGO_ENABLED 0
 
-WORKDIR /go/src/github.com/wormi4ok/evernote2md
+WORKDIR /go/src/github.com/gonejack/evernote2md
 
 RUN set -xe && apk add --no-cache git
 
@@ -14,7 +14,7 @@ FROM alpine:3.13
 
 LABEL   org.label-schema.name="evernote2md" \
         org.label-schema.description="Convert Evernote .enex export file to Markdown" \
-        org.label-schema.vcs-url="https://github.com/wormi4ok/evernote2md" \
+        org.label-schema.vcs-url="https://github.com/gonejack/evernote2md" \
         org.label-schema.docker.cmd="docker run --rm wormi4ok/evernote2md export.enex notes"
 
 COPY --from=build /go/bin/evernote2md /

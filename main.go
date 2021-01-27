@@ -18,8 +18,8 @@ import (
 	"github.com/hashicorp/logutils"
 	"github.com/integrii/flaggy"
 
-	"github.com/wormi4ok/evernote2md/encoding/enex"
-	"github.com/wormi4ok/evernote2md/internal"
+	"github.com/gonejack/evernote2md/encoding/enex"
+	"github.com/gonejack/evernote2md/internal"
 )
 
 var version = "dev"
@@ -30,7 +30,7 @@ func init() {
 	flaggy.SetVersion(version)
 
 	flaggy.DefaultParser.ShowHelpOnUnexpected = false
-	flaggy.DefaultParser.AdditionalHelpPrepend = "http://github.com/wormi4ok/evernote2md"
+	flaggy.DefaultParser.AdditionalHelpPrepend = "http://github.com/gonejack/evernote2md"
 }
 
 func main() {
