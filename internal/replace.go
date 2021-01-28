@@ -39,8 +39,9 @@ func (c *Converter) normalizeHTML(note *enex.Note, _ *markdown.Note, rr ...TagRe
 	f(doc)
 
 	qdoc := goquery.NewDocumentFromNode(doc)
+	qdoc.Find("a > img").Unwrap()
 	qdoc.Find("a").FilterFunction(func(i int, selection *goquery.Selection) bool {
-		return strings.TrimSpace(selection.Text()) == ""
+		return selection.Children().Length() == 0 && strings.TrimSpace(selection.Text()) == ""
 	}).Remove()
 
 	out, err := qdoc.Html()
